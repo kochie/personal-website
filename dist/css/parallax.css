@@ -1,0 +1,65 @@
+.divider {
+    height:50px;
+}
+
+section {
+    height:500px;
+    padding-top:50px;
+    padding-bottom:50px;
+    overflow:auto;
+}
+
+.bg-1 {
+    background: url("/dist/images/AirplaneMaker.jpg") no-repeat center top fixed;
+    color: gainsboro;
+    background-size:cover;
+}
+
+.image-1 {
+    background: url("/dist/images/MoonLanding.jpg") no-repeat center center fixed;
+    color:#fff;
+    background-size:cover;
+    height: 400px;
+    -webkit-text-stroke: 1px grey;
+}
+
+.middle-jumbotron {
+    background: url("/dist/images/MoonLanding.jpg") no-repeat center center fixed;
+    background-size:cover;
+}
+
+.bg-2 {
+    background: url("/dist/images/MoonLanding.jpg") no-repeat center center fixed;
+    background-size:cover;
+}
+
+.text-middle {
+    display: flex;
+    align-items: center;
+}
+
+.image-2 {
+    background: url("/dist/images/ColoursOfJupiter.jpg") no-repeat center center fixed;
+    color:#fff;
+    background-size:cover;
+    height: 600px;
+}
+
+#footer {
+    height: 60px;
+    background-color:#585858;
+    margin-top:50px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+#footer a {
+    color:#efefef;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+
+
