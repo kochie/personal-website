@@ -1,18 +1,13 @@
-/**
- * Created by Robert on 25/07/2016.
- */
-
 var gulp = require('gulp');
-var ghPages = require('gulp-gh-pages');
+var nunjucksRender = require('gulp-nunjucks-render');
 
-gulp.task('deploy', function() {
-    return gulp.src('./dist/**/*')
-        .pipe(ghPages(
-          {
-            "remoteUrl": "git@github.com:kochie/kochie.github.io",
-            "branch": "master"
-          }
-
-
-        ));
+gulp.task('nunjucks', function() {
+  // Gets .html and .nunjucks files in pages
+  return gulp.src('app/pages/**/*.+(html|nunjucks)')
+  // Renders template with nunjucks
+  .pipe(nunjucksRender({
+      path: ['app/templates']
+    }))
+  // output files in app folder
+  .pipe(gulp.dest('app'))
 });
